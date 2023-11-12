@@ -1,0 +1,12 @@
+.card-holder {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

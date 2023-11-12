@@ -1,0 +1,37 @@
+.candidateLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(251, 37, 37);
+    border-radius: 100%;
+    background-color: blue;
+    color: aliceblue;
+}
+
+.uc{
+    /* background: #e45a5a; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* background: linear-gradient(); */
+}
+
+.pc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* background: linear-gradient(58,95,85); */
+}
+
+.controls{
+    /* background: #d7b3b3; */
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}

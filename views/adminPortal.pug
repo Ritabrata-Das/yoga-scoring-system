@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/adminPortal.css">
+    <title>Admin Portal</title>
+  </head>
+  <body>
+    <br>
+    <font id="YSS_ID" style="display: none;">#{YSS_ID}</font>
+    <h2 align="center">Competition Name: <font style="color: brown;" id="competitionName">#{competitionName}</font></h2>
+    <hr>
+    <h2 align="center">Admin Controls</h2>
+    <br>
+    <div class="d-flex" style="flex-direction: row;justify-content: space-around;">
+      <div class="sub-container">
+        <div class="card text-white bg-success" style="width: 18rem">
+          <div class="card-header">Live Scoresheet</div>
+          <div class="card-body">
+            <label for="groupName1" class="form-label">Group</label> 
+            <select class="form-select" id="groupName1" onchange="getAsanaByGroupName()" aria-label="Default select example"></select>
+            <label for="asana1" class="form-label">Asana</label> 
+            <select class="form-select" id="asana1" onchange="clearInterval(timer)" aria-label="Default select example"></select>
+            <br>
+            <button class="btn btn-primary" id="openScoresheet">Open Scoresheet</button>
+          </div>
+        </div>
+      </div>
+      <div class="sub-container">
+        <div class="card text-white bg-danger" style="width: 18rem">
+          <div class="card-header">Live Leaderboard</div>
+          <div class="card-body" id="body1">
+            <label for="groupName2" class="form-label">Group</label> 
+            <select class="form-select" id="groupName2" aria-label="Default select example"></select>
+            <br>
+            <button class="btn btn-primary" id="openLeaderBoard">Open Leaderboard</button>
+          </div>
+        </div>
+      </div>
+      <div class="sub-container">
+        <div class="card text-white bg-info" style="width: 18rem">
+          <div class="card-header">End Competition</div>
+          <div class="card-body" id="body4">
+            <button class="btn btn-success" id="closeCompetition">Close Competition</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <h2 style="margin-top: 40px;" align="center">Judge Status</h2>
+    <div style="margin-top: -50px;padding: 30px">
+      <table class="table" style="margin-top: 23px;">
+        <thead>
+          <tr>
+            <th scope="col">Group</th>
+            <th scope="col">Judge</th>
+            <th scope="col">Status</th>
+            <th scope="col">Controls</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-status">
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <hr>
+    <h2 style="margin-top: 40px;" align="center">Judge Information</h2>
+    <div style="margin-top: -50px;padding: 30px">
+      <table class="table" style="margin-top: 23px;">
+        <thead>
+          <tr>
+            <th scope="col">Judge</th>
+            <th scope="col">Group</th>
+            <th scope="col">YSS Judge ID</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-judge-info">
+        </tbody>
+      </table>
+      <br>
+      <div class="d-flex" style="flex-direction: row;align-items: center;justify-content: center;width: 100%;">
+        <button class="btn btn-danger" id="setJudgeDetails">Set Details</button>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <h2 style="margin-top: 40px;" align="center">Chief Judge Information</h2>
+    <div style="margin-top: -50px;padding: 30px">
+      <table class="table" style="margin-top: 23px;">
+        <thead>
+          <tr>
+            <th scope="col">Group</th>
+            <th scope="col">YSS Judge ID</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-chief-judge-info">
+        </tbody>
+      </table>
+      <br>
+      <div class="d-flex" style="flex-direction: row;align-items: center;justify-content: center;width: 100%;">
+        <button class="btn btn-danger" id="setChiefJudgeInfo">Set Details</button>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <h2 style="margin-top: 40px;" align="center">Candidate Information</h2>
+    <br>
+    <br>
+    <div style="margin-top: -50px;padding: 30px;">
+      <div class="">
+        <div class="row">
+          <div class="col">
+            <select class="form-select" id="groupSelection"></select>
+          </div>
+          <div class="col">
+            <button class="btn btn-success" id="showCandidateList">Show Candidate</button>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" id="startingChestNo" placeholder="Enter the Starting Chest No">
+          </div>
+          <div class="col">
+            <button class="btn btn-danger" id="updateStartChestNoBtn">Update</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-success" id="shuffle">Shuffle</button>
+          </div>
+        </div>
+      </div>
+      <table class="table" style="margin-top: 23px;">
+        <thead>
+          <tr>
+            <th scope="col">Chest No</th>
+            <th scope="col">YSS Candidate ID</th>
+            <th scope="col">Candidate Name</th>
+            <th scope="col">Organization</th>
+            <th scope="col">Gender</th>
+            <th scope="col" style="display: none;">DOB</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-candidates">
+        </tbody>
+      </table>
+    </div>
+  <script src="/JS/adminPortal.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+  
+</html>

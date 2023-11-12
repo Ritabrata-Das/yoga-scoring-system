@@ -1,0 +1,23 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  
+  "hosting": {
+    "site": "yoga-scoring-system",
+    "port": "5500",
+    "public": "public"
+  },
+
+  "emulators": {
+    "database": {
+      "host": "127.0.0.1",
+      "port": "5050"
+    },
+    "hosting":{
+      "port":"5500"
+    }
+  }
+  
+}
+

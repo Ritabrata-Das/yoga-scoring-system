@@ -1,0 +1,5 @@
+CREATE TABLE `155`.`group_criteria` (
+  `GroupName` VARCHAR(100) NOT NULL,
+  `MinAge` INT NOT NULL,
+  `MaxAge` INT NOT NULL,
+  PRIMARY KEY (`GroupName`));

@@ -1,0 +1,2258 @@
+[debug] [2023-08-20T11:07:49.584Z] ----------------------------------------------------------------------
+[debug] [2023-08-20T11:07:49.587Z] Command:       C:\Users\ritab\OneDrive\Desktop\YOGASC~1\firebase-tools-instant-win.exe C:\Users\ritab\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase emulators:start
+[debug] [2023-08-20T11:07:49.588Z] CLI Version:   12.4.8
+[debug] [2023-08-20T11:07:49.588Z] Platform:      win32
+[debug] [2023-08-20T11:07:49.588Z] Node Version:  v16.16.0
+[debug] [2023-08-20T11:07:49.589Z] Time:          Sun Aug 20 2023 16:37:49 GMT+0530 (India Standard Time)
+[debug] [2023-08-20T11:07:49.589Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-20T11:07:49.686Z] Field ".emulators.database.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2023-08-20T11:07:49.692Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-20T11:07:49.692Z] > authorizing via signed-in user (aparnadasghosh55@gmail.com)
+[debug] [2023-08-20T11:07:49.846Z] java version "17.0.2" 2022-01-18 LTS
+
+[debug] [2023-08-20T11:07:49.847Z] Java(TM) SE Runtime Environment (build 17.0.2+8-LTS-86)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.2+8-LTS-86, mixed mode, sharing)
+
+[debug] [2023-08-20T11:07:49.874Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: database, hosting"}}
+[debug] [2023-08-20T11:07:49.884Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-20T11:07:49.884Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4004 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4004 instead."}}
+[debug] [2023-08-20T11:07:49.887Z] assigned listening specs for emulators {"user":{"database":[{"address":"127.0.0.1","family":"IPv4","port":5050}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4004},{"address":"::1","family":"IPv6","port":4004}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project notepad-15a43. This may result in unexpected behavior. 
+[debug] [2023-08-20T11:07:49.900Z] [hub] writing locator at C:\Users\ritab\AppData\Local\Temp\hub-notepad-15a43.json
+[debug] [2023-08-20T11:07:49.916Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/notepad-15a43 [none]
+[debug] [2023-08-20T11:07:51.312Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/notepad-15a43 200
+[debug] [2023-08-20T11:07:51.312Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/notepad-15a43 {"projectId":"notepad-15a43","projectNumber":"734759980869","displayName":"Notepad","name":"projects/notepad-15a43","resources":{"hostingSite":"notepad-15a43","realtimeDatabaseInstance":"notepad-15a43-default-rtdb"},"state":"ACTIVE","etag":"1_f91ef438-961f-49b8-b03b-ecac62fa1387"}
+[debug] [2023-08-20T11:07:51.313Z] database rules config:  [{"instance":"notepad-15a43-default-rtdb","rules":"C:\\Users\\ritab\\OneDrive\\Desktop\\Yoga Scoring App\\database.rules.json"}]
+[debug] [2023-08-20T11:07:51.317Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2023-08-20T11:07:51.318Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-08-20T11:07:51.318Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2023-08-20T11:07:51.318Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\ritab\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.11.2.jar","--host","127.0.0.1","--port",5050,"--single_project_mode","Warning"],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\ritab\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.11.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",5050,\"--single_project_mode\",\"Warning\"],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2023-08-20T11:07:53.653Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/notepad-15a43/sites 
+[debug] [2023-08-20T11:07:55.400Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/notepad-15a43/sites 200
+[debug] [2023-08-20T11:07:55.400Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/notepad-15a43/sites {"sites":[{"name":"projects/notepad-15a43/sites/notepad-15a43","defaultUrl":"https://notepad-15a43.web.app","type":"DEFAULT_SITE"},{"name":"projects/notepad-15a43/sites/yoga-scoring-system","defaultUrl":"https://yoga-scoring-system.web.app","appId":"1:734759980869:web:c2ead78e665d8f71cd782c","type":"USER_SITE"}]}
+[debug] [2023-08-20T11:07:55.401Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/notepad-15a43/webApps/-/config [none]
+[debug] [2023-08-20T11:07:56.737Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/notepad-15a43/webApps/-/config 200
+[debug] [2023-08-20T11:07:56.737Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/notepad-15a43/webApps/-/config {"projectId":"notepad-15a43","appId":"1:734759980869:web:c2ead78e665d8f71cd782c","databaseURL":"https://notepad-15a43-default-rtdb.firebaseio.com","storageBucket":"notepad-15a43.appspot.com","apiKey":"AIzaSyCVBFJJcWhK-xgWojT8kaImyI886NsWlyI","authDomain":"notepad-15a43.firebaseapp.com","messagingSenderId":"734759980869","measurementId":"G-8SQR07XH8D"}
+[debug] [2023-08-20T11:07:56.747Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/notepad-15a43 [none]
+[debug] [2023-08-20T11:07:57.640Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/notepad-15a43 200
+[debug] [2023-08-20T11:07:57.640Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/notepad-15a43 {"projectId":"notepad-15a43","projectNumber":"734759980869","displayName":"Notepad","name":"projects/notepad-15a43","resources":{"hostingSite":"notepad-15a43","realtimeDatabaseInstance":"notepad-15a43-default-rtdb"},"state":"ACTIVE","etag":"1_f91ef438-961f-49b8-b03b-ecac62fa1387"}
+[info] i  hosting[yoga-scoring-system]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[yoga-scoring-system]: Local server: http://127.0.0.1:5500 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5500\u001b[22m\u001b[24m"}}
+[debug] [2023-08-20T11:07:57.662Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-08-20T11:07:57.662Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-08-20T11:07:57.662Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\ritab\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\ritab\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-08-20T11:07:57.990Z] Web / API server started at 127.0.0.1:4004
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4004\n"}}
+[debug] [2023-08-20T11:07:57.991Z] Web / API server started at ::1:4004
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4004\n"}}
+[debug] [2023-08-20T11:07:58.187Z] >>> [apiv2][query] PUT http://127.0.0.1:5050/.settings/rules.json ns=notepad-15a43-default-rtdb
+[debug] [2023-08-20T11:07:58.187Z] >>> [apiv2][body] PUT http://127.0.0.1:5050/.settings/rules.json "{\n  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}"
+[debug] [2023-08-20T11:07:58.745Z] <<< [apiv2][status] PUT http://127.0.0.1:5050/.settings/rules.json 200
+[debug] [2023-08-20T11:07:58.745Z] <<< [apiv2][body] PUT http://127.0.0.1:5050/.settings/rules.json {"status":"ok"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4004/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┬────────────────────────────────┐
+│ Emulator │ Host:Port      │ View in Emulator UI            │
+├──────────┼────────────────┼────────────────────────────────┤
+│ Database │ 127.0.0.1:5050 │ http://127.0.0.1:4004/database │
+├──────────┼────────────────┼────────────────────────────────┤
+│ Hosting  │ 127.0.0.1:5500 │ n/a                            │
+└──────────┴────────────────┴────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [20/Aug/2023:11:08:14 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Aug/2023:11:08:14 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [20/Aug/2023:11:08:42 +0000] "GET / HTTP/1.1" 404 139 "http://127.0.0.1:4004/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Aug/2023:11:08:42 +0000] \"GET / HTTP/1.1\" 404 139 \"http://127.0.0.1:4004/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\""}}
+[debug] [2023-08-20T11:17:16.583Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[debug] [2023-08-20T11:17:16.588Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.590Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.592Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.594Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.596Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.598Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.599Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.600Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.602Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.604Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.605Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.614Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.617Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.620Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.621Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.623Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.626Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.628Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.630Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.633Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.635Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.637Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.639Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.644Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.645Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.646Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.647Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.649Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.650Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.651Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.652Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.653Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.654Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.655Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.655Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.657Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.659Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.660Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.663Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.665Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.667Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.668Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.670Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.671Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.672Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.674Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.679Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.681Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.682Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.683Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.684Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.685Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.685Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.686Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.686Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.687Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.688Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.688Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.689Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.690Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.691Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[debug] [2023-08-20T11:17:16.703Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.704Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.704Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.705Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.706Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.707Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.708Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.709Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.709Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.711Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.712Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.713Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.714Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.714Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.715Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.716Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.716Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.718Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[warn] !  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
+[info] i  database: Stopping Database Emulator {"metadata":{"emulator":{"name":"database"},"message":"Stopping Database Emulator"}}
+[debug] [2023-08-20T11:17:16.725Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.726Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.727Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.730Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.731Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.732Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.732Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.733Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.733Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.734Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.734Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.735Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.735Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.736Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.737Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.737Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.739Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.739Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[warn] !  Database Emulator has exited upon receiving signal: SIGINT 
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2023-08-20T11:17:16.749Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.750Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.751Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.752Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.753Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.753Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.754Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.754Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.755Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.755Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.756Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.756Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.757Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.758Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.759Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.759Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.760Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.760Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.761Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2023-08-20T11:17:16.770Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.772Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.773Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.773Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.773Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.774Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.774Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.775Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.775Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.777Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.777Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.778Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.779Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.781Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.781Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.782Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.782Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.783Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.785Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.785Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.786Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.786Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.786Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.787Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.787Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.788Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.788Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.789Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.789Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.789Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.790Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.791Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.791Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.792Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.792Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.793Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.793Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.794Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.795Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.797Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.797Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.798Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.798Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.799Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.800Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.801Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.801Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.802Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.803Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.803Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-20T11:17:16.804Z] Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:817:11)
+    at WriteStream.Socket._write (node:net:829:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\ritab\.cache\firebase\tools\lib\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+[error] 

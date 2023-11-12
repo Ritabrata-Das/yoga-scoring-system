@@ -1,0 +1,59 @@
+html {
+    width: 100%;
+}
+
+.header {
+    /* background-color:rgb(215, 81, 81); */
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+    width: 100vw;
+}
+
+.groupSelectionForm {
+    width: 100vw;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.judgementSheet {
+    padding: 2vw;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.judgementSheetTable {
+    width: 1475px;
+
+}
+
+.blink-bg {
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    animation: blinkingBackground 1s infinite;
+}
+
+@keyframes blinkingBackground {
+    0% {
+        background-color: #ff0000;
+    }
+    50% {
+        background-color: #ffffff;
+    }
+
+    100% {
+        background-color: #ff0000;
+    }
+}

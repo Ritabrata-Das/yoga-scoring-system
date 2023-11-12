@@ -1,0 +1,27 @@
+{
+  "name": "yoga-scoring-app",
+  "version": "1.0.0",
+  "description": "This is an app used for the scoring of candidates in an yoga competition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "script": "nodemon .\\index.js"
+  },
+  "author": "Ritabrata",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "firebase": "^10.2.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22",
+    "pdf-lib": "^1.17.1",
+    "pug": "^3.0.2",
+    "puppeteer": "^20.7.3",
+    "save": "^2.9.0",
+    "socket.io": "^4.7.1",
+    "sweetalert": "^2.1.2"
+  }
+}
