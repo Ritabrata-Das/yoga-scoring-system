@@ -3,3 +3,33 @@ CREATE TABLE `155`.`group_criteria` (
   `MinAge` INT NOT NULL,
   `MaxAge` INT NOT NULL,
   PRIMARY KEY (`GroupName`));
+
+CREATE TABLE yoga_scoring_system.blackbear_students (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    full_name VARCHAR(255) NOT NULL,
+    results TEXT
+);
+
+CREATE TABLE yoga_scoring_system.blackbear_events (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    date DATE NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE yoga_scoring_system.blackbear_notices (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    date DATE NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE yoga_scoring_system.blackbear_careers (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    department VARCHAR(255) NOT NULL,
+    description TEXT
+);

@@ -1059,3 +1059,57 @@ app.get('/home', (req, res) => {
 http.listen(5500, () => {
     console.log('Listening at port 5500.................');
 })
+
+app.get('/blackbear', (req, res) => {
+    fs.readFile("HTML/blackbear_index.html", 'utf-8', (err, html_res) => {
+        if (err) {
+            res.writeHead(500);
+            res.write('Internal Server Error');
+        } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(html_res);
+        }
+        res.end();
+    })
+});
+
+app.post('/student_login', (req, res) => {
+    const { username, password } = req.body;
+    const sql = 'SELECT * FROM yoga_scoring_system.blackbear_students WHERE username = ? AND password = ?';
+    connection.query(sql, [username, password], (err, result) => {
+        if (err) throw err;
+        if (result.length > 0) {
+            res.send('Login successful');
+        } else {
+            res.send('Invalid username or password');
+        }
+        res.end();
+    });
+});
+
+app.get('/blackbear_events', (req, res) => {
+    const sql = 'SELECT * FROM yoga_scoring_system.blackbear_events ORDER BY date DESC';
+    connection.query(sql, (err, result) => {
+        if (err) throw err;
+        res.send(result);
+        res.end();
+    });
+});
+
+app.get('/blackbear_notices', (req, res) => {
+    const sql = 'SELECT * FROM yoga_scoring_system.blackbear_notices ORDER BY date DESC';
+    connection.query(sql, (err, result) => {
+        if (err) throw err;
+        res.send(result);
+        res.end();
+    });
+});
+
+app.get('/blackbear_careers', (req, res) => {
+    const sql = 'SELECT * FROM yoga_scoring_system.blackbear_careers';
+    connection.query(sql, (err, result) => {
+        if (err) throw err;
+        res.send(result);
+        res.end();
+    });
+});
