@@ -79,28 +79,28 @@ app.post('/updateStartChestNo', (req, res) => {
     connection.query(sql, (err, result, field) => {
         if (err) throw err;
         for (let i = 0; i < result.length; i++) {
-            var sql1 = `UPDATE ${req.body.YSS_ID}.${req.body.group} SET ChestNo = ${req.body.startChestNo + i} WHERE ChestNo = ${result[i].ChestNo}`;
-            connection.query(sql1, (err, result1, field1) => {
+            var sql1 = `UPDATE ${req.body.YSS_ID}.${req.body.group} SET ChestNo = ? WHERE ChestNo = ?`;
+            connection.query(sql1, [req.body.startChestNo + i, result[i].ChestNo], (err, result1, field1) => {
                 if (err) throw err;
             })
-            var sql3 = `UPDATE ${req.body.YSS_ID}.${'judge1_'+req.body.group.replace('_registration','')} SET ChestNo = ${req.body.startChestNo + i} WHERE ChestNo = ${result[i].ChestNo}`;
-            connection.query(sql3,(err,result3,field3)=>{
+            var sql3 = `UPDATE ${req.body.YSS_ID}.${'judge1_'+req.body.group.replace('_registration','')} SET ChestNo = ? WHERE ChestNo = ?`;
+            connection.query(sql3, [req.body.startChestNo + i, result[i].ChestNo],(err,result3,field3)=>{
                 if(err) throw err;
             })
-            var sql4 = `UPDATE ${req.body.YSS_ID}.${'judge2_'+req.body.group.replace('_registration','')} SET ChestNo = ${req.body.startChestNo + i} WHERE ChestNo = ${result[i].ChestNo}`;
-            connection.query(sql4,(err,result4,field4)=>{
+            var sql4 = `UPDATE ${req.body.YSS_ID}.${'judge2_'+req.body.group.replace('_registration','')} SET ChestNo = ? WHERE ChestNo = ?`;
+            connection.query(sql4, [req.body.startChestNo + i, result[i].ChestNo],(err,result4,field4)=>{
                 if(err) throw err;
             })
-            var sql5 = `UPDATE ${req.body.YSS_ID}.${'judge3_'+req.body.group.replace('_registration','')} SET ChestNo = ${req.body.startChestNo + i} WHERE ChestNo = ${result[i].ChestNo}`;
-            connection.query(sql5,(err,result5,field5)=>{
+            var sql5 = `UPDATE ${req.body.YSS_ID}.${'judge3_'+req.body.group.replace('_registration','')} SET ChestNo = ? WHERE ChestNo = ?`;
+            connection.query(sql5, [req.body.startChestNo + i, result[i].ChestNo],(err,result5,field5)=>{
                 if(err) throw err;
             })
-            var sql6 = `UPDATE ${req.body.YSS_ID}.${'judge4_'+req.body.group.replace('_registration','')} SET ChestNo = ${req.body.startChestNo + i} WHERE ChestNo = ${result[i].ChestNo}`;
-            connection.query(sql6,(err,result6,field6)=>{
+            var sql6 = `UPDATE ${req.body.YSS_ID}.${'judge4_'+req.body.group.replace('_registration','')} SET ChestNo = ? WHERE ChestNo = ?`;
+            connection.query(sql6, [req.body.startChestNo + i, result[i].ChestNo],(err,result6,field6)=>{
                 if(err) throw err;
             })
-            var sql7 = `UPDATE ${req.body.YSS_ID}.${'judge5_'+req.body.group.replace('_registration','')} SET ChestNo = ${req.body.startChestNo + i} WHERE ChestNo = ${result[i].ChestNo}`;
-            connection.query(sql7,(err,result7,field7)=>{
+            var sql7 = `UPDATE ${req.body.YSS_ID}.${'judge5_'+req.body.group.replace('_registration','')} SET ChestNo = ? WHERE ChestNo = ?`;
+            connection.query(sql7, [req.body.startChestNo + i, result[i].ChestNo],(err,result7,field7)=>{
                 if(err) throw err;
             })
         }
@@ -126,8 +126,8 @@ app.post('/shuffleCandidateData', (req, res) => {
         if (err) {console.log(err.errno);}
     });
     for (let i = 0; i < req.body.data.length; i++) {
-        var sql1 = `INSERT INTO ${req.body.YSS_ID}.${req.body.group} VALUES(${req.body.data[i][0]},'${req.body.data[i][1]}','${req.body.data[i][2]}','${req.body.data[i][5]}','${req.body.data[i][3]}','${req.body.data[i][4]}','${req.body.groupName}')`;
-        connection.query(sql1, (err, result, field) => {
+        var sql1 = `INSERT INTO ${req.body.YSS_ID}.${req.body.group} VALUES(?, ?, ?, ?, ?, ?, ?)`;
+        connection.query(sql1, [req.body.data[i][0], req.body.data[i][1], req.body.data[i][2], req.body.data[i][5], req.body.data[i][3], req.body.data[i][4], req.body.groupName], (err, result, field) => {
             if (err) throw err;
         });
     }
@@ -148,8 +148,8 @@ app.post('/setChiefJudgeDetails', (req, res) => {
             }
         }
         for (let ele of req.body.data) {
-            var sql2 = `INSERT INTO ${req.body.YSS_ID.toLowerCase()}.chief_judge_info(GroupName,YSS_ID) VALUES('${ele.group}','${ele.yss_id}')`;
-            connection.query(sql2, (err2, resutl2, field2) => {
+            var sql2 = `INSERT INTO ${req.body.YSS_ID.toLowerCase()}.chief_judge_info(GroupName,YSS_ID) VALUES(?, ?)`;
+            connection.query(sql2, [ele.group, ele.yss_id], (err2, resutl2, field2) => {
                 if (err2) throw err2;
             });
         }
@@ -200,8 +200,8 @@ app.post('/setJudgeDetails', (req, res) => {
             }
         }
         for (let ele of req.body.data) {
-            var sql2 = `INSERT INTO ${req.body.YSS_ID.toLowerCase()}.judge_info(JudgeNo,GroupName,YSS_ID) VALUES('${ele.judgeNo}','${ele.group}','${ele.yss_id}')`;
-            connection.query(sql2, (err2, resutl2, field2) => {
+            var sql2 = `INSERT INTO ${req.body.YSS_ID.toLowerCase()}.judge_info(JudgeNo,GroupName,YSS_ID) VALUES(?, ?, ?)`;
+            connection.query(sql2, [ele.judgeNo, ele.group, ele.yss_id], (err2, resutl2, field2) => {
                 if (err2) throw err2;
             });
         }
@@ -241,15 +241,15 @@ app.post('/updateLeaderboard', (req, res) => {
         if (err) throw err;
     });
     for (let i = 0; i < req.body.candidateData_sorted.length; i++) {
-        var sql = `SELECT YSS_ID FROM ${req.body.YSS_ID}.${req.body.group.replace(/ /g, '_').toLowerCase() + '_registration'} WHERE ChestNo = ${req.body.candidateData_sorted[i][0]}`;
-        connection.query(sql, (err, result, field) => {
+        var sql = `SELECT YSS_ID FROM ${req.body.YSS_ID}.${req.body.group.replace(/ /g, '_').toLowerCase() + '_registration'} WHERE ChestNo = ?`;
+        connection.query(sql, [req.body.candidateData_sorted[i][0]], (err, result, field) => {
             if (err) throw err;
             let leaderboardData = [];
             for (let j = 2; j < req.body.candidateData_sorted[i].length; j++) {
                 leaderboardData.push(req.body.candidateData_sorted[i][j]);
             }
-            var sql1 = `INSERT INTO ${req.body.YSS_ID}.${'leaderboard_' + req.body.group.replace(/ /g, '_').toLowerCase()} VALUES('${result[0].YSS_ID}',${i + 1},${req.body.candidateData_sorted[i][0]},'${req.body.candidateData_sorted[i][1]}',${leaderboardData.toString()})`;
-            connection.query(sql1, (err, result1, field1) => {
+            var sql1 = `INSERT INTO ${req.body.YSS_ID}.${'leaderboard_' + req.body.group.replace(/ /g, '_').toLowerCase()} VALUES(?, ?, ?, ?, ${leaderboardData.map(() => '?').join(',')})`;
+            connection.query(sql1, [result[0].YSS_ID, i + 1, req.body.candidateData_sorted[i][0], req.body.candidateData_sorted[i][1], ...leaderboardData], (err, result1, field1) => {
                 if (err) throw err;
             });
         });
@@ -259,8 +259,8 @@ app.post('/updateLeaderboard', (req, res) => {
 });
 
 app.get('/getYSS_IDByCompetitionName', (req, res) => {
-    var sql1 = `SELECT YSS_ID FROM yoga_scoring_system.yoga_competitions WHERE CompetitionName = '${req.query.competitionName}'`;
-    connection.query(sql1, (err, result, field) => {
+    var sql1 = `SELECT YSS_ID FROM yoga_scoring_system.yoga_competitions WHERE CompetitionName = ?`;
+    connection.query(sql1, [req.query.competitionName], (err, result, field) => {
         if (err) throw err;
         res.send(result[0].YSS_ID);
         res.end();
@@ -269,12 +269,12 @@ app.get('/getYSS_IDByCompetitionName', (req, res) => {
 
 app.get('/checkJudgeStatusByJudgeAndGroup', (req, res) => {
     // console.log(req.query);
-    var sql1 = `SELECT YSS_ID FROM yoga_scoring_system.yoga_competitions WHERE CompetitionName = '${req.query.competitionName}'`;
-    connection.query(sql1, (err, result1, field1) => {
+    var sql1 = `SELECT YSS_ID FROM yoga_scoring_system.yoga_competitions WHERE CompetitionName = ?`;
+    connection.query(sql1, [req.query.competitionName], (err, result1, field1) => {
         if (err) throw err;
         if (result1.length != 0) {
-            var sql2 = `SELECT Status FROM ${result1[0].YSS_ID.toLowerCase()}.judge_status WHERE JudgeNo = '${req.query.judge}' AND GroupName = '${req.query.group}'`;
-            connection.query(sql2, (err, result2, field2) => {
+            var sql2 = `SELECT Status FROM ${result1[0].YSS_ID.toLowerCase()}.judge_status WHERE JudgeNo = ? AND GroupName = ?`;
+            connection.query(sql2, [req.query.judge, req.query.group], (err, result2, field2) => {
                 if (err) throw err;
                 if (result2.length != 0) {
                     res.send(result2[0].Status);
@@ -294,8 +294,8 @@ app.get('/checkJudgeStatusByJudgeAndGroup', (req, res) => {
 
 app.get('/changeStatus', (req, res) => {
     console.log(req.query);
-    var sql = `UPDATE ${req.query.yss_id.toLowerCase()}.judge_status SET Status = '${req.query.command}' WHERE GroupName = '${req.query.group}' AND JudgeNo = '${req.query.judge}' `;
-    connection.query(sql, (err, result, field) => {
+    var sql = `UPDATE ${req.query.yss_id.toLowerCase()}.judge_status SET Status = ? WHERE GroupName = ? AND JudgeNo = ?`;
+    connection.query(sql, [req.query.command, req.query.group, req.query.judge], (err, result, field) => {
         if (err) throw err;
         res.send('SUCCESS');
         res.end();
@@ -316,8 +316,8 @@ app.get('/displayLeaderboard', (req, res) => {
 });
 
 app.post('/getAsanaByGroupName', (req, res) => {
-    var sql = `SELECT AsanaNo FROM ${req.body.YSS_ID.toLowerCase()}.asanas WHERE GroupName = '${req.body.groupName}'`;
-    connection.query(sql, (err, result, field) => {
+    var sql = `SELECT AsanaNo FROM ${req.body.YSS_ID.toLowerCase()}.asanas WHERE GroupName = ?`;
+    connection.query(sql, [req.body.groupName], (err, result, field) => {
         if (err) throw err;
         res.send(result);
         res.end();
@@ -352,12 +352,17 @@ app.get('/getGroupByCompetitionName', (req, res) => {
     var sql = `SELECT * FROM yoga_scoring_system.yoga_competitions WHERE CompetitionName = ?`;
     connection.query(sql, [req.query.competitionName], (err, result, field) => {
         if (err) throw err;
-        var sql1 = `SELECT * FROM ${result[0].YSS_ID.toLowerCase()}.group_info`;
-        connection.query(sql1, (err, result1, field1) => {
-            if (err) throw err;
-            res.send(result1);
+        if (result.length > 0) {
+            var sql1 = `SELECT * FROM ${result[0].YSS_ID.toLowerCase()}.group_info`;
+            connection.query(sql1, (err, result1, field1) => {
+                if (err) throw err;
+                res.send(result1);
+                res.end();
+            });
+        } else {
+            res.send([]);
             res.end();
-        });
+        }
     });
 });
 
@@ -365,7 +370,11 @@ app.get('/adminPortal', (req, res) => {
     var sql = 'SELECT * FROM yoga_scoring_system.yoga_competitions WHERE YSS_ID = ?';
     connection.query(sql, [req.query.YSS_ID], (err, result, field) => {
         if (err) throw err;
-        res.status(200).render('adminPortal', { competitionName: result[0].CompetitionName, YSS_ID: req.query.YSS_ID });
+        if (result.length > 0) {
+            res.status(200).render('adminPortal', { competitionName: result[0].CompetitionName, YSS_ID: req.query.YSS_ID });
+        } else {
+            res.status(404).send('Competition not found');
+        }
     });
 });
 
